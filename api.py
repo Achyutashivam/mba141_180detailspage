@@ -35,12 +35,12 @@ def root():
     }
 
 
-@app.get("/mba161_220")
+@app.get("/mba141_180")
 def get_all_data():
     return load_data()
 
 
-@app.get("/mba161_220/{section}")
+@app.get("/mba141_180/{section}")
 def get_section(section: str):
     payload = load_data()
     colleges = payload["data"]   # LIST
