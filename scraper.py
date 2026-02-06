@@ -15,9 +15,30 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
+    "https://www.shiksha.com/college/tilak-raj-chadha-institute-of-management-and-technology-yamuna-nagar-2852",
+    "https://www.shiksha.com/college/ies-s-management-college-and-research-centre-bandra-west-mumbai-28220",
+    "https://www.shiksha.com/college/rathinam-college-of-arts-and-science-coimbatore-25364",
+    "https://www.shiksha.com/college/presidency-college-hebbal-bangalore-19396",
+    "https://www.shiksha.com/university/integral-university-iul-lucknow-21870",
+    "https://www.shiksha.com/university/lingaya-s-vidyapeeth-faridabad-24621",
+    "https://www.shiksha.com/college/nehru-college-of-engineering-and-research-centre-ncerc-thrissur-25023",
+    "https://www.shiksha.com/college/the-oxford-college-of-business-management-h-s-r-layout-bangalore-21403",
+    "https://www.shiksha.com/college/jnnce-jawaharlal-nehru-national-college-of-engineering-shimoga-22357",
+    "https://www.shiksha.com/college/poddar-group-of-institution-jaipur-48877",
+    "https://www.shiksha.com/college/nehru-memorial-college-tiruchirappalli-20769",
+    "https://www.shiksha.com/college/jaipuria-school-of-business-ghaziabad-48786",
+    "https://www.shiksha.com/college/sardar-vallabhbhai-patel-international-school-of-textiles-and-management-coimbatore-25334", 
+    "https://www.shiksha.com/college/the-oxford-college-of-engineering-hosur-road-bangalore-449",
+    "https://www.shiksha.com/college/coimbatore-institute-of-management-and-technology-cimat-11891",
+    "https://www.shiksha.com/college/p-k-r-arts-college-for-women-erode-22870",
+    "https://www.shiksha.com/college/harlal-institute-of-management-and-technology-greater-noida-48928",
+    "https://www.shiksha.com/college/global-business-school-hubli-28515",
+    "https://www.shiksha.com/college/christ-academy-institute-for-advanced-studies-electronic-city-phase-1-bangalore-56171",
+    "https://www.shiksha.com/college/t-john-group-of-institutions-bannerghatta-road-bangalore-28395",
    "https://www.shiksha.com/college/sahrdaya-institute-of-management-studies-thrissur-53441",
     "https://www.shiksha.com/college/university-business-school-chandigarh-21440",
     "https://www.shiksha.com/university/the-icfai-university-sikkim-gangtok-52524",
+    "https://www.shiksha.com/college/poddar-management-and-technical-campus-jaipur-148199",
     "https://www.shiksha.com/college/acropolis-faculty-of-management-and-research-indore-65043",
     "https://www.shiksha.com/college/srbs-sheila-raheja-school-of-business-management-research-bandra-east-mumbai-43351",
     "https://www.shiksha.com/college/datta-meghe-institute-of-management-studies-nagpur-43309",
@@ -25,7 +46,7 @@ BASE_URL = [
     "https://www.shiksha.com/college/myra-school-of-business-mysore-33987",
     "https://www.shiksha.com/college/prasad-v-potluri-siddhartha-institute-of-technology-vijayawada-24531",
     "https://www.shiksha.com/college/ims-business-school-imsbs-kolkata-sonarpur-37942",
-    "https://www.shiksha.com/university/bits-pilani-birla-institute-of-technology-and-science-467",
+    "https://www.shiksha.com/university/mit-wpu-pune-53229",
     "https://www.shiksha.com/university/kiet-university-ghaziabad-962",
     "https://www.shiksha.com/college/indian-school-of-business-hyderabad-gachibowli-28444",
     "https://www.shiksha.com/college/school-of-business-upes-dehradun-38604",
@@ -34,47 +55,7 @@ BASE_URL = [
     "https://www.shiksha.com/college/international-institute-of-business-studies-airport-new-airport-bangalore-49833",
     "https://www.shiksha.com/college/vishwa-vishwani-institute-of-systems-and-management-hyderabad-51902",
     "https://www.shiksha.com/college/lloyd-business-school-greater-noida-37957",
-    "https://www.shiksha.com/college/b-k-school-of-professional-and-management-studies-navrangpura-ahmedabad-24660",
-    "https://www.shiksha.com/college/symbiosis-institute-of-business-management-symbiosis-international-bangalore-hosur-road-36082",
-    "https://www.shiksha.com/university/assam-down-town-university-adtu-guwahati-38050",
-    "https://www.shiksha.com/college/greater-noida-institute-of-technology-32439",
-    "https://www.shiksha.com/college/centurion-university-of-technology-and-management-bhubaneswar-campus-53057",
-    "https://www.shiksha.com/college/riim-arihant-group-of-institutes-bavdhan-pune-46556",
-    "https://www.shiksha.com/university/jis-university-kolkata-47791",
-    "https://www.shiksha.com/college/dev-bhoomi-uttarakhand-university-dehradun-47413",
-    "https://www.shiksha.com/college/university-college-of-commerce-and-business-management-osmania-university-tarnaka-hyderabad-53677",
-    "https://www.shiksha.com/college/rajalakshmi-engineering-college-thandalam-chennai-24039",
-    "https://www.shiksha.com/college/vit-business-school-vellore-institute-of-technology-vellore-31040",
-    "https://www.shiksha.com/college/jindal-global-business-school-o-p-jindal-global-university-sonepat-34723",
-    "https://www.shiksha.com/college/international-institute-of-management-studies-iims-pune-hinjewadi-31240",
-    "https://www.shiksha.com/college/cmr-technical-campus-autonomous-engineering-college-medchal-hyderabad-42690",
-    "https://www.shiksha.com/college/dy-patil-akurdi-mba-akurdi-pune-35064",
-    "https://www.shiksha.com/college/haldia-institute-of-technology-harish-mukherjee-road-kolkata-1116",
-    "https://www.shiksha.com/college/ramdeobaba-university-nagpur-21172",
-    "https://www.shiksha.com/college/kcc-institute-of-technology-and-management-greater-noida-32427",
-    "https://www.shiksha.com/college/gems-b-school-bangalore-vasanth-nagar-26986",
-    "https://www.shiksha.com/college/ips-academy-indore-49406",
-    "https://www.shiksha.com/college/asm-s-institute-of-business-management-and-research-chinchwad-pune-30065",
-    "https://www.shiksha.com/college/lakshmi-narain-college-of-technology-bhopal-42559",
-    "https://www.shiksha.com/college/loyola-institute-of-technology-palanchur-chennai-42584",
-    "https://www.shiksha.com/college/nmims-hyderabad-mahboobnagar-35399",
-    "https://www.shiksha.com/college/icfai-business-school-ibs-bangalore-mysore-road-36231",
-    "https://www.shiksha.com/college/bengal-institute-of-business-studies-lake-view-road-kolkata-30386",
-    "https://www.shiksha.com/college/k-k-wagh-institute-of-engineering-education-and-research-nashik-20406",
-    "https://www.shiksha.com/university/m-s-ramaiah-university-of-applied-sciences-msruas-bangalore-47146",
-    "https://www.shiksha.com/college/dr-d-y-patil-b-school-tathawade-pune-54766",
-    "https://www.shiksha.com/college/nicmar-university-pune-balewadi-27442",
-    "https://www.shiksha.com/university/gls-university-ahmedabad-58429",
-    "https://www.shiksha.com/college/international-institute-of-health-management-research-iihmr-new-delhi-dwarka-34295",
-    "https://www.shiksha.com/university/mangalayatan-university-aligarh-22191",
-    "https://www.shiksha.com/college/st-joseph-s-college-of-engineering-old-mahabalipuram-road-chennai-24564",
-    "https://www.shiksha.com/college/nhce-bangalore-new-horizon-college-of-engineering-marathahalli-46973",
-    "https://www.shiksha.com/college/icfai-business-school-mumbai-powai-26449",
-    "https://www.shiksha.com/college/symbiosis-institute-of-business-management-noida-213435",
-    "https://www.shiksha.com/college/atria-institute-of-technology-hebbal-bangalore-28151",
-    "https://www.shiksha.com/college/zeal-college-of-engineering-and-research-narhe-pune-36894",
-    "https://www.shiksha.com/college/chitkara-college-of-sales-and-marketing-chitkara-university-chandigarh-52072",
-    "https://www.shiksha.com/college/empi-business-school-chattarpur-delhi-25938", 
+   
 ]
 
 
@@ -9283,7 +9264,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 161
+    c_count = 141
 
     try:
         for base_url in BASE_URL:
